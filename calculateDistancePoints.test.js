@@ -54,13 +54,5 @@ describe('calculateDistancePoints', () => {
             const expected = '120';
             assert.equal(actual, expected);
         });
-    });
-
-    describe('wrong hill size', () => {
-        it('test', () => {
-            const actual = calculateDistancePoints(130, 'test', 200);
-            const expected = 'Wrong hill size, please correct!';
-            assert.equal(actual, expected);
-        });
-    });
+    });    
 });
