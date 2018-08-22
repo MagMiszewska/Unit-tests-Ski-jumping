@@ -55,4 +55,12 @@ describe('calculateTotalPoints', () => {
 			assert.equal(actual, expected);
 		})
 	})
+
+	describe('distancePoints is null', () => {
+        it('expected null', () => {
+            const actual = calculateTotalPoints(226, 'test', 200, [17.5, 17.5, 17.5, 17.0, 17.0], -2.7, 0);
+			const expected = null;
+			assert.equal(actual, expected);
+        });
+    }); 
 })

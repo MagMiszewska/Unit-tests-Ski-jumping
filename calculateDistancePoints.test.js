@@ -54,5 +54,12 @@ describe('calculateDistancePoints', () => {
             const expected = '120';
             assert.equal(actual, expected);
         });
-    });    
+    });
+    describe('return null', () => {
+        it('should return null', () => {
+            const actual = calculateDistancePoints(226, 'test', 200);
+            const expected = null;
+            assert.equal(actual, expected);
+        });        
+    });        
 });

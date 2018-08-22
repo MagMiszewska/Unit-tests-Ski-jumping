@@ -8,6 +8,7 @@ const calculateDistancePoints = (distance, hillSize, kPoint) => {
     if (hillSize === 'flying') {
         return (distance - kPoint) * 1.2 + 120;
     }
+    return null;
 };
 
 module.exports = calculateDistancePoints;
